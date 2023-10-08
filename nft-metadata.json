@@ -1,0 +1,12 @@
+{
+    "attributes" : [ {
+      "trait_type" : "Breed",
+      "value" : "Maltipoo"
+    }, {
+      "trait_type" : "carpenter",
+      "value" : "Mocha"
+    } ],
+    "description" : "The world's most adorable and sensitive anther.",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmXJyLYkLwCUEKQyAY6oaUeMWFqzpo3dYsjKq5M5kY3ckc",
+    "name" : "Ramses"
+}
