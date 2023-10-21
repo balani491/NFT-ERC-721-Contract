@@ -8,6 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract MyNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
+    uint256 public constant maxNFTs = 3000;
 
     constructor() ERC721("MyNFT", "NFT") {}
 
@@ -16,6 +17,7 @@ contract MyNFT is ERC721URIStorage, Ownable {
         onlyOwner
         returns (uint256)
     {
+        require(_tokenIds.current() < maxNFTs, "Maximum number of NFTs minted.");
         _tokenIds.increment();
 
         uint256 newItemId = _tokenIds.current();
